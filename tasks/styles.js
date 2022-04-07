@@ -17,8 +17,8 @@ const browsers = [
   'Safari >= 6',
 ];
 
-export const buildStylesDev = () => {
-  return gulp
+export const buildStylesDev = () =>
+  gulp
     .src('./src/styles/styles.scss')
     .pipe(map.init())
     .pipe(sass().on('error', sass.logError))
@@ -32,10 +32,9 @@ export const buildStylesDev = () => {
     .pipe(map.write('./'))
     .pipe(gulp.dest('./dist'))
     .pipe(connect.reload());
-};
 
-export const buildStylesProd = () => {
-  return gulp
+export const buildStylesProd = () =>
+  gulp
     .src('./src/styles/styles.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(
@@ -47,4 +46,3 @@ export const buildStylesProd = () => {
     .pipe(clean({ compatibility: 'ie8' }))
     .pipe(gulp.dest('./dist'))
     .pipe(connect.reload());
-};
