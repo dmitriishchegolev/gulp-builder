@@ -1,0 +1,30 @@
+{
+  "name": "gulp-builder",
+  "version": "1.0.0",
+  "description": "Static website builder",
+  "main": "index.js",
+  "type": "module",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.50.0"
+  },
+  "scripts": {
+    "build:dev": "gulp buildDev",
+    "build:prod": "gulp buildProd"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmitriishchegolev/gulp-builder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dmitriishchegolev/gulp-builder/issues"
+  },
+  "homepage": "https://github.com/dmitriishchegolev/gulp-builder#readme",
+  "dependencies": {
+    "gulp-file-include": "^2.3.0"
+  }
+}
