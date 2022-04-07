@@ -15,7 +15,8 @@
     "serve:dev": "gulp serveDev",
     "serve:prod": "gulp serveProd",
     "build:dev": "gulp buildDev",
-    "build:prod": "gulp buildProd"
+    "build:prod": "gulp buildProd",
+    "deploy": "s3Upload"
   },
   "repository": {
     "type": "git",
@@ -31,6 +32,7 @@
     "gulp-autoprefixer": "^8.0.0",
     "gulp-file-include": "^2.3.0",
     "gulp-htmlmin": "^5.0.1",
+    "gulp-s3": "^0.11.0",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-watch": "^5.0.1"
   }
