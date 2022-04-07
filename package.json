@@ -7,10 +7,13 @@
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.3.0",
+    "gulp-connect": "^5.7.0",
     "gulp-sass": "^5.1.0",
     "sass": "^1.50.0"
   },
   "scripts": {
+    "serve:dev": "gulp serveDev",
+    "serve:prod": "gulp serveProd",
     "build:dev": "gulp buildDev",
     "build:prod": "gulp buildProd"
   },
@@ -25,6 +28,9 @@
   },
   "homepage": "https://github.com/dmitriishchegolev/gulp-builder#readme",
   "dependencies": {
-    "gulp-file-include": "^2.3.0"
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-file-include": "^2.3.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-watch": "^5.0.1"
   }
 }
