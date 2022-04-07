@@ -1,6 +1,15 @@
 import gulp from 'gulp';
-import { buildHtml } from './html.js';
-import { buildStyles } from './styles.js';
+import { buildHtmlDev, buildHtmlProd } from './html.js';
+import { buildStylesDev, buildStylesProd } from './styles.js';
+import { cleanDist } from './clean.js';
 
-export const buildProcessProd = gulp.parallel(buildHtml, buildStyles);
-export const buildProcessDev = gulp.parallel(buildHtml, buildStyles);
+export const buildProcessDev = gulp.series(
+  cleanDist,
+  buildHtmlDev,
+  buildStylesDev
+);
+export const buildProcessProd = gulp.series(
+  cleanDist,
+  buildHtmlProd,
+  buildStylesProd
+);
