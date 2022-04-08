@@ -1,6 +1,4 @@
-import gulp from 'gulp';
 import watch from 'gulp-watch';
-import connect from 'gulp-connect';
 import { buildHtmlDev, buildHtmlProd } from './html.js';
 import { buildStylesDev, buildStylesProd } from './styles.js';
 import { buildJsDev, buildJsProd } from './js.js';
