@@ -4,7 +4,7 @@ import { buildStylesDev, buildStylesProd } from './styles.js';
 import { buildJsDev, buildJsProd } from './js.js';
 import { cleanDist } from './clean.js';
 
-const buildAssets = gulp.src('src/assets').pipe(gulp.dest('./dist'));
+const buildAssets = () => gulp.src('src/assets').pipe(gulp.dest('./dist'));
 
 export const buildProcessDev = gulp.series(
   cleanDist,
